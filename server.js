@@ -36,10 +36,10 @@ app.post('/results', async (req, res) => {
     const weatherUrl = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`
 
     res.render('index', {
-        temperture: apiResponse.data.main.temp,
+        temperture: apiResponse.data.main.temp.toFixed(0),
         picture: weatherUrl,
         des: apiResponse.data.weather[0].description,
-
+        celcius: 'C'
     });
 
 });

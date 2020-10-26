@@ -20,11 +20,22 @@
                 <button class="submit-btn" type="submit">Submit</button>
             </form>
         </div>
-        <h1>{{temperture}}</h1>
-        <img src={{picture}} />
-        <h1>{{des}}</h1>
+        <div class="temp-pic-container">
+            <div class="whole-content-box">
+                <div class="temp-pic-box">
+                    <div class="move-c-logo">
+                        <h1 class="temp-heading">{{temperture}}<span class="c-logo">{{celcius}}</span> </h1>
+                        {{!-- <h1 class="temp-heading">{{temperture}}</h1> --}}
+                    </div>
+                    <img class="weather-img" src={{picture}} />
+                </div>
+                <h1 class="description">{{des}}</h1>
+            </div>
+        </div>
 
-        <a href="/sevendays">Click to see the seven day forcast</a>
+        <div class="seven-day-link">
+            <a href="/sevendays">Click to see the seven day forcast</a>
+        </div>
     </section>
 </body>
 

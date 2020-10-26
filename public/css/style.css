@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:500');
 
 body {
-    background-color: lightblue;
+    background-image: url('https://www.manfrottoschoolofxcellence.com/wp-content/uploads/2017/12/Sunshine-Showers.jpg');
+    /* background-image: url('https://i1.wp.com/thelincolnite.co.uk/wp-content/uploads/2019/10/Autumn-weather-stock.jpg?fit=1860%2C1043&ssl=1'); */
+    background-image: url('https://www.photoscotland.net/wp-content/gallery/landscape/Elgol-bw1300.jpg');
+    background-size: cover;
     width: 100%;
     height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    width: 100%;
     margin: 0;
 }
 header {
@@ -25,7 +35,6 @@ header {
 .forms-container {
     width: 100%;
     height: 250px;
-    background: red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +43,6 @@ header {
 .form-box {
     width: 90%;
     height: 125px;
-    background: yellow;
     margin: 0;
 }
 .input {
@@ -45,8 +53,61 @@ header {
     padding-left: 10px;
 }
 .submit-btn {
-    background-color: rgb(27, 216, 27);
     border: none;
     height: 30px;
     width: 75px;
+    background-color: rgb(235, 111, 82);
+    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
+.temp-pic-container {
+    height: 140px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whole-content-box {
+    width: 215px;
+    height: 100px;
+}
+.temp-pic-box {
+    height: 70px;
+    width: 180px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.weather-img {
+    width: 125px;
+    height: 160px;
+    margin-top: -50px;
+}
+.move-c-log {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+}
+.temp-heading {
+    font-family: 'Roboto';
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    margin: 0;
+}
+.c-logo {
+    font-size: 25px;
+    font-family: helvetica;  
+    color: rgb(255, 255, 255);
+    position: absolute;
+}
+.description {
+    font-family: 'Roboto';
+    color: rgb(255, 255, 255);
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.seven-day-link {
+    visibility: hidden;
+}
+
