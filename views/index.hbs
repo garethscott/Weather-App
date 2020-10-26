@@ -10,31 +10,32 @@
 
 <body>
     <section class="wrapper">
-        <header>
-            <h1 class="main-heading">Weather App</h1>
-        </header>
-        <div class="forms-container">
-            <form class="form-box" action="/results" method="POST">
-                <input class="input input-top" type="text" placeholder="Enter country" name="country" />
-                <input class="input input-bottom" type="text" placeholder="Enter city" name="city" />
-                <button class="submit-btn" type="submit">Submit</button>
-            </form>
-        </div>
-        <div class="temp-pic-container">
-            <div class="whole-content-box">
-                <div class="temp-pic-box">
-                    <div class="move-c-logo">
-                        <h1 class="temp-heading">{{temperture}}<span class="c-logo">{{celcius}}</span> </h1>
-                        {{!-- <h1 class="temp-heading">{{temperture}}</h1> --}}
-                    </div>
-                    <img class="weather-img" src={{picture}} />
-                </div>
-                <h1 class="description">{{des}}</h1>
+        <div class="wrapper-content-box">
+            <header>
+                <h1 class="main-heading">Weather App</h1>
+            </header>
+            <div class="forms-container">
+                <form class="form-box" action="/results" method="POST">
+                    <input class="input input-top" type="text" placeholder="Enter country" name="country" />
+                    <input class="input input-bottom" type="text" placeholder="Enter city" name="city" />
+                    <button class="submit-btn" type="submit">Submit</button>
+                </form>
             </div>
-        </div>
+            <div class="temp-pic-container">
+                <div class="whole-content-box">
+                    <div class="temp-pic-box">
+                        <div class="move-c-logo">
+                            <h1 class="temp-heading">{{temperture}}<span class="c-logo">{{celcius}}</span> </h1>
+                        </div>
+                        <img class="weather-img" src={{picture}} />
+                    </div>
+                    <h1 class="description">{{des}}</h1>
+                </div>
+            </div>
 
-        <div class="seven-day-link">
-            <a href="/sevendays">Click to see the seven day forcast</a>
+            <div class="seven-day-link">
+                <a href="/sevendays">Click to see the seven day forcast</a>
+            </div>
         </div>
     </section>
 </body>
