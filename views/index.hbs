@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="wrapper">
+        <header>
+            <h1 class="main-heading">Weather App</h1>
+        </header>
+        <div class="forms-container">
+            <form class="form-box" action="/results" method="POST">
+                <input class="input input-top" type="text" placeholder="Enter country" name="country" />
+                <input class="input input-bottom" type="text" placeholder="Enter city" name="city" />
+                <button class="submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+        <h1>{{temperture}}</h1>
+        <img src={{picture}} />
+        <h1>{{des}}</h1>
+
+        <a href="/sevendays">Click to see the seven day forcast</a>
+    </section>
+</body>
+
+</html>
