@@ -38,10 +38,11 @@ header {
     margin: 0;
 }
 .input {
-    width: 98%;
+    width: 96%;
     height: 30px;
     margin-bottom: 15px;
     border: none;
+    padding-left: 10px;
 }
 .submit-btn {
     background-color: rgb(27, 216, 27);
